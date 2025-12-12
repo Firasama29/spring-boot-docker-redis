@@ -17,14 +17,14 @@ pipeline {
         stage('Build') {
             steps {
                 // Use Maven to compile and package
-                sh './mvnw clean package -DskipTests'
+                sh './mvn clean package -DskipTests'
             }
         }
 
         stage('Test') {
             steps {
                 // Run unit tests
-                sh './mvnw test'
+                sh './mvn test'
             }
         }
 
