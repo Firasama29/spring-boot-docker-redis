@@ -9,8 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Pull code from GitHub
-                git branch: 'main', url: 'https://github.com/Firasama29/spring-boot-docker-redis'
+                checkout scm
             }
         }
 
